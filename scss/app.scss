@@ -365,7 +365,7 @@ h3,h4,h5,h6 {
   -webkit-transition: height 0.5s, margin 0.5s;
      -moz-transition: height 0.5s, margin 0.5s;
           transition: height 0.5s, margin 0.5s;
-  .octicon-arrow-down {
+  i {
     position: absolute;
     top: 50%;
     right: 0;
@@ -390,7 +390,7 @@ h3,h4,h5,h6 {
     &:hover {
       background-color: transparent;
     }
-    .octicon-arrow-down {
+    i {
       display: none;
     }
   }

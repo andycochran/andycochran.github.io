@@ -31,7 +31,7 @@ $('.leaflet-control-attribution').click(function() {
 
 
 // Map toggle
-$('<div class="map-after"><span class="octicon octicon-arrow-down"></span></div>').insertAfter($('#map'));
+$('<div class="map-after"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>').insertAfter($('#map'));
 $('.map-after').click(function() {
   $('.map-container').addClass('toggled');
   map.invalidateSize(true);
