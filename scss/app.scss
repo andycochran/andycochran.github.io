@@ -49,3 +49,385 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+/*--------------------------------------------------
+  Font Awesome
+--------------------------------------------------*/
+
+@import "../bower_components/font-awesome/scss/font-awesome";
+
+
+/*--------------------------------------------------
+  Layout Styles
+--------------------------------------------------*/
+
+.main-content {
+  padding-bottom: rem-calc(50);
+}
+.menu {
+  font-size: rem-calc(24);
+  & > li > a {
+    padding-right: 1.25rem;
+    padding-left:  1.25rem;
+  }
+  @include breakpoint(medium) {
+    font-size: rem-calc(36);
+    & > li > a {
+      padding-right: 1.75rem;
+      padding-left:  1.75rem;
+    }
+  }
+  @include breakpoint(large) {
+    font-size: rem-calc(18);
+  }
+  @include breakpoint(xlarge) {
+    font-size: rem-calc(24);
+    & > li > a {
+      padding-right: 1.5rem;
+      padding-left:  1.5rem;
+    }
+  }
+}
+
+.margin-bottom {
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+@include breakpoint(medium) {
+  .medium-padding-left {
+    padding-left: $paragraph-margin-bottom * $global-lineheight;
+  }
+  .medium-padding-right {
+    padding-right: $paragraph-margin-bottom * $global-lineheight;
+  }
+}
+
+@include breakpoint(large) {
+  .main-content {
+    padding-top: map-get($grid-column-gutter, medium)*0.5;
+    padding-bottom: rem-calc(200);
+  }
+  .large-padding-left {
+    padding-left: $paragraph-margin-bottom * $global-lineheight;
+  }
+}
+
+.tight-grid {
+  margin: 0 -0.25rem -0.5rem -0.25rem !important;
+  .columns {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+  }
+  .button {
+    margin-bottom: 0.5rem;
+  }
+  @include breakpoint(large) {
+    max-height: 16rem;
+    overflow: auto;
+  }
+}
+
+
+/*--------------------------------------------------
+  Typography
+--------------------------------------------------*/
+
+.light-gray    { color: $light-gray !important; }
+.medium-gray  { color: $medium-gray !important; }
+.dark-gray    { color: $dark-gray !important; }
+
+$DeepPink: #c13c4f;
+$HotPink: #FF69B4;
+$PinkGold: #f1a985;
+.deep-pink    { color: $DeepPink !important; }
+.pink         { color: $HotPink !important; }
+.pink-gold    { color: $PinkGold !important; }
+
+h1,h2 {
+  letter-spacing: -0.03em;
+}
+h1 {
+  margin-bottom: 0;
+}
+h2 {
+  margin-bottom: $global-margin * 2;
+}
+h3,h4,h5,h6 {
+  letter-spacing: -0.02em;
+}
+
+.my-name {
+  line-height: 1;
+}
+.my-title {
+  line-height: 1.2;
+}
+
+.text-large   { @extend h5; }
+.text-xlarge  { @extend h4; }
+
+.menu li a .fa {
+  vertical-align: initial;
+}
+
+.proofreader-insert {
+  position: relative;
+  color: darken($dark-gray,15%);
+  span {
+    font-family: "Shadows Into Light";
+    letter-spacing: 0.1em;
+    color: inherit;
+    position: absolute;
+    bottom: 120%;
+    right: 0.1em;
+    line-height: 1em;
+    -webkit-transform: translate(50%,0) rotate(5deg);
+        -ms-transform: translate(50%,0) rotate(5deg);
+            transform: translate(50%,0) rotate(5deg);
+    -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    &::after {
+      content: "v";
+      display: block;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      margin-left: -0.5em;
+      width: 1em;
+      height: 1em;
+      line-height: 1em;
+      -webkit-transform: rotate(10deg);
+          -ms-transform: rotate(10deg);
+              transform: rotate(10deg);
+      -webkit-transform-origin: 50% 100%;
+          -ms-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+}
+
+.github-link {
+  position: relative;
+  .octicon-mark-github {
+    display: inline-block;
+    position: absolute;
+    bottom: -7px;
+    left: -7px;
+    background-color: $white;
+    padding: 0.25rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.ghosted {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.75s;
+     -moz-transition: opacity 0.75s;
+          transition: opacity 0.75s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.button {
+  font-family: $header-font-family;
+  font-weight: 700;
+}
+
+.skills-key {
+  font-size: 1rem;
+}
+.skills-list {
+  @extend .no-bullet;
+  font-size: 0;
+  margin: 0;
+  li {
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 $global-margin/2 $global-margin/2 0;
+  }
+  .octicon {
+    font-size: 1em;
+  }
+}
+
+.meta-separator {
+  color: $medium-gray;
+  font-family: $body-font-family;
+  font-weight: 100;
+}
+
+
+/*--------------------------------------------------
+  Modules
+--------------------------------------------------*/
+
+.hover-zoom {
+  margin-bottom: $paragraph-margin-bottom;
+  display: block;
+  @include breakpoint(medium) {
+    -webkit-transition: -webkit-transform 0.2s !important;
+       -moz-transition:    -moz-transform 0.2s !important;
+            transition:         transform 0.2s !important;
+    -webkit-transform-origin: 20% 50%;
+        -ms-transform-origin: 20% 50%;
+            transform-origin: 20% 50%;
+    &:hover {
+      position: relative;
+      z-index: 1;
+      -webkit-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+              transform: scale(1.5);
+    }
+  }
+}
+
+
+/*--------------------------------------------------
+  Map
+--------------------------------------------------*/
+
+.map-container {
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: $global-margin*2;
+  -webkit-transition: height 0.5s;
+     -moz-transition: height 0.5s;
+          transition: height 0.5s;
+  &.toggled {
+    height: 400px;
+  }
+}
+#map {
+  height: 80px;
+  position: relative;
+  z-index: 1;
+  .toggled & {
+    height: 400px;
+  }
+  p {
+    font-weight: 400;
+  }
+}
+
+.leaflet-left.leaflet-top .leaflet-control {
+  margin-left: -60px;
+  -webkit-transition: margin 0.75s;
+     -moz-transition: margin 0.75s;
+          transition: margin 0.75s;
+  .toggled & {
+    margin-left: 10px;
+  }
+}
+.leaflet-right.leaflet-bottom .leaflet-control {
+  margin-bottom: -50px;
+  opacity: 0;
+  -webkit-transition: margin 0.5s, opacity 0.5s;
+     -moz-transition: margin 0.5s, opacity 0.5s;
+          transition: margin 0.5s, opacity 0.5s;
+  .toggled & {
+    margin-bottom: 0px;
+    opacity: 1;
+  }
+}
+
+.leaflet-control-attribution {
+  border-radius: 3px 0 0 0;
+  background-color: $light-gray !important;
+  box-shadow: -2px -2px 1px rgba(0,0,0,0.2);
+}
+
+.leaflet-control-attribution-toggle {
+  &:before {
+    content: 'Map Attributions';
+    color: $primary-color;
+    cursor: pointer;
+  }
+  &.toggled:before {
+    content: '';
+  }
+}
+
+.map-after {
+  background: transparent url(../images/raw-edge-top.png) center bottom repeat-x scroll;
+  margin-top: 0px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: height 0.5s, margin 0.5s;
+     -moz-transition: height 0.5s, margin 0.5s;
+          transition: height 0.5s, margin 0.5s;
+  .octicon-arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top: -1.5rem;
+    color: $primary-color;
+    text-shadow: 1px 1px 0 $light-gray, -1px 1px 0 $light-gray, 1px -1px 0 $light-gray, -1px -1px 0 $light-gray;
+    font-size: 3rem;
+    opacity: 0.7;
+  }
+  &:hover {
+    background-color: rgba($white, 0.2);
+    .octicon-arrow-down {
+      opacity: 0.9;
+    }
+  }
+  .toggled & {
+    margin-top: 394px;
+    height: 6px;
+    cursor: default;
+    &:hover {
+      background-color: transparent;
+    }
+    .octicon-arrow-down {
+      display: none;
+    }
+  }
+}
+
+
+/*--------------------------------------------------
+  Spotify
+--------------------------------------------------*/
+
+.spotify-grid {
+  .button {
+    margin-bottom: 0.5rem;
+  }
+  @include breakpoint(large) {
+    max-height: 16rem;
+    overflow: auto;
+  }
+}
+
+.spotify-modal {
+  position: relative;
+  padding-top: 3rem;
+  iframe {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    @include breakpoint(large) {
+      height: 500px;
+    }
+  }
+  .loading {
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

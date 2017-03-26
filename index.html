@@ -4,165 +4,416 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Andy Cochran</title>
+    <link href="//fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+    <div class="map-container hide-for-print"><div id="map"></div></div>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
+    <div class="main-content">
+
+      <div class="row">
+        <div class="large-12 columns">
+
+          <h1 class="my-name"><strong>Andy Cochran</strong></h1>
+
+          <h2 class="my-title">civic innovator, designer, open&#8209;source developer</h2>
+
+          <div class="row collapse">
+            <div class="large-9 columns">
+
+              <p class="text-xlarge">I&nbsp;believe that technology can help cities work better through transparency and participatory engagement. I&nbsp;accomplish this by building software that&apos;s well crafted, accessible, and easy to use. I&nbsp;advocate for the advancement of open data policies. And&nbsp;I&nbsp;regularly contribute to open&#8209;source libraries which further standards, security, and reliability.</p>
+
+              <div class="menu-centered">
+                <ul class="menu -expanded text-center">
+                  <li><a href="https://github.com/andycochran" class=""><i class="fa fa-github"></i><span class="show-for-large">&nbsp;GitHub</span></a></li>
+                  <li><a href="mailto:andrewthomascochran@gmail.com" class=""><i class="fa fa-envelope-open-o"></i><span class="show-for-large">&nbsp;Email</span></a></li>
+                  <li><a href="https://twitter.com/andycochran" class=""><i class="fa fa-twitter"></i><span class="show-for-large">&nbsp;Twitter</span></a></li>
+                  <li><a href="https://www.instagram.com/acochran/" class=""><i class="fa fa-instagram"></i><span class="show-for-large">&nbsp;Instagram</span></a></li>
+                  <li><a href="andycochran-resume.pdf" class=""><i class="fa fa-file-pdf-o"></i><span class="show-for-large">&nbsp;CV&nbsp;<small>(PDF)</small></span></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="large-3 columns show-for-large">
+
+              <div class="large-padding-left">
+                <div class="callout"><a href="https://github.com/andycochran" class="thumbnail"><img src="//avatars2.githubusercontent.com/u/409279"></a></div>
+              </div>
+
             </div>
           </div>
+
+          <hr>
+
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
+        <div class="large-8 columns">
+
+          <h3>New York City Council</h3>
+
+          <p class="text-large">As the Lead Designer/Developer of NYC Council&apos;s Digital Strategies Division, I&apos;ve implemented Speaker Melissa Mark-Viverito&apos;s plan for digital inclusion and open government.</p>
+
+          <h4 class="medium-gray"><i class="fa fa-trophy"></i>&nbsp;&nbsp;<a href="http://council.nyc.gov/"><strong>The new council.nyc.gov</strong></a></h4>
+
+          <div class="row collapse">
+            <div class="medium-3 columns">
+
+              <a href="http://council.nyc.gov" class="thumbnail hover-zoom"><img src="images/th-council-labs-map.jpg"></a>
+              <a href="http://council.nyc.gov" class="thumbnail hover-zoom"><img src="images/th-council-labs-legislation.jpg"></a>
+              <a href="http://council.nyc.gov" class="thumbnail hover-zoom"><img src="images/th-council-labs-pb.jpg"></a>
+
+            </div>
+            <div class="medium-9 columns">
+
+              <div class="medium-padding-left">
+
+                <p>To test new ways for NYC Council to share information and engage residents, I built a beta website using an iterative process throughout 2016. It&apos;s now <a href="http://council.nyc.gov/"><strong>Council&apos;s official website</strong></a>. Its human-centered, mobile-first design approach and focus on accessibility ensures that the site works for anyone, regardless of which devices or assistive technologies they use.</p>
+
+                <p>I streamlined workflows and increased the efficiency of overburdened staff by creating WordPress Multisite themes customized to the specific needs of Council Districts and Divisions. I designed user workflows so residents can more easily discover their Council Member/District, including an interactive map and search functionalities.</p>
+
+                <p>Advocating for users, I worked with Council staff to compile institutional knowledge and design content that&apos;s understandable and intuitive. This demystification was crucial in clarifying for residents what Council does and how they can participate.</p>
+
+                <p>I created <a href="https://newyorkcitycouncil.github.io/nycc-brand-guidelines/"><strong>brand guidelines</strong></a> that put content first, establishing a clear and concise voice that avoids governmental jargon, and a visual identity that increases readability and consistency.</p>
+
+              </div>
+
             </div>
           </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
+
+          <h4 class="medium-gray"><i class="fa fa-trophy"></i>&nbsp;&nbsp;<a href="http://www.shewillbe.nyc/"><strong>#SheWillBe</strong> <small>(Young Women&apos;s Initiative)</small></a></h4>
+
+          <div class="row collapse">
+            <div class="medium-4 columns">
+
+              <a class="thumbnail hover-zoom"><img src="images/shewillbe.jpg"></a>
+
+            </div>
+            <div class="medium-8 columns">
+
+              <div class="medium-padding-left">
+
+                <p>I created a digital campaign that empowered young women to join in on conversations with leaders and organizers to identify gaps in services for young women of color, resulting in policy recommendations that address those disparities.</p>
+
+                <p>I designed and developed <a href="http://www.shewillbe.nyc/"><strong>shewillbe.nyc</strong></a> along with <a href="http://www.shewillbe.nyc/style-guide/"><strong>brand guidelines</strong></a> and print materials. And I built a <a href="https://github.com/andycochran/memer"><strong>meme generator</strong></a> that let young women share their aspirations by changing their avatars or uploading images to social media, which helped the campaign go viral.</p>
+
+              </div>
+
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
+
+          <h4 class="medium-gray"><i class="fa fa-trophy"></i>&nbsp;&nbsp;<a href="http://www.eastharlemplan.nyc/"><strong>East Harlem Plan</strong></a></h4>
+
+          <div class="row collapse">
+            <div class="medium-2 columns">
+
+              <a href="http://www.eastharlemplan.nyc/" class="thumbnail hover-zoom"><img src="images/th-eastharlemplan-home.jpg"></a>
+
+            </div>
+            <div class="medium-10 columns">
+
+              <div class="medium-padding-left">
+
+                <p>I built the <a href="http://www.eastharlemplan.nyc/"><strong>eastharlemplan.nyc</strong></a> microsite to engage residents and local stakeholders in meaningful conversations about the future of East Harlem. This site helped participants to develop a community-based vision and strategy for implementation.</p>
+
+              </div>
+
             </div>
           </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
+
+          <hr>
+
+          <h3>OpenPlans</h3>
+
+          <p class="text-large">As Design &amp; Creative Director at <a href="http://openplans.org/">OpenPlans</a> <small>(a non-profit civic tech incubator)</small>, I contributed open&#8209;source code to web apps, collaborative mapping services, <a href="http://bustime.mta.info/">real-time transit trackers</a>, <a href="http://www.opentripplanner.org/">multi-modal trip planners</a>, <a href="http://suite.opengeo.org/">geospatial software</a>, and <a href="http://transportationcamp.org/">other</a> <a href="http://openstreetsproject.org/">civic</a> <a href="https://github.com/openplans/hatch">engagement</a> <a href="https://github.com/openplans/openblock">tools</a>. I was involved in projects from ideation through implementation and helped roll out mature initiatives into their own for-profit companies.
+          </p>
+
+          <h4><strong>Shareabouts</strong> <a href="https://github.com/openplans/shareabouts"><small><i class="fa fa-github"></i>&nbsp;GitHub</small></a></h4>
+
+          <p>Shareabouts is an online mapping tool for crowdsourcing public input about places. Easily drop pins on a map and have discussions about those places. This mobile-friendly web app has been used to suggest bike share locations, identify dangerous intersections, survey community assets, propose capital projects, and provide feedback for other city planning and design issues.</p>
+
+          <div class="row collapse margin-bottom">
+            <div class="medium-3 columns ">
+              <a class="thumbnail hover-zoom"><img src="images/cdot-on-f6f6f6.jpg"></a>
             </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
-                </div>
+            <div class="medium-9 columns">
+              <div class="medium-padding-left">
+                <h5><i class="fa fa-trophy medium-gray"></i>&nbsp;&nbsp;Chicago DOT <a href="http://bikeparking.chicagocompletestreets.org/">Bike Parking</a> / <a href="http://abandonedbikes.chicagocompletestreets.org/">Abandoned Bikes</a></h5>
+                <p>Request a new bike rack or report an abandoned bike in Chicago. Upload a pic of the location. Discuss it. Check its status.</p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>       
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>           
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>          
+          <div class="row collapse">
+            <div class="medium-3 columns medium-push-9">
+              <a class="thumbnail hover-zoom"><img src="images/visionzero-on-f6f6f6.jpg"></a>
+            </div>
+            <div class="medium-9 columns medium-pull-3">
+              <div class="medium-padding-right">
+                <h5><i class="fa fa-trophy medium-gray"></i>&nbsp;&nbsp;New York City <a href="http://www1.nyc.gov/assets/visionzero/maps-data/vz-input-map.shtml">Vision Zero Input Map</a></h5>
+                <p>With Google Street View integration, pedestrians place markers in 3D space to identify dangerous walking issues with great precision.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse">
+            <div class="medium-3 columns">
+              <a class="thumbnail hover-zoom"><img src="images/divvy-on-f6f6f6.jpg"></a>
+            </div>
+            <div class="medium-9 columns">
+              <div class="medium-padding-left">
+                <h5><i class="fa fa-trophy medium-gray"></i>&nbsp;&nbsp;Chicago DOT <a href="http://suggest.divvybikes.com/page/about">Divvy Bikes Suggestions</a></h5>
+                <p>Community input determines how to expand the bike share system with the most stations in North America.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse">
+            <div class="medium-3 columns medium-push-9">
+              <a class="thumbnail hover-zoom"><img src="images/pb-district-zoom.jpg"></a>
+            </div>
+            <div class="medium-9 columns medium-pull-3">
+              <div class="medium-padding-right">
+                <h5><i class="fa fa-trophy medium-gray"></i>&nbsp;&nbsp;NYC Council <a href="http://ideas.pbnyc.org/">Participatory Budgeting Ideas Map</a></h5>
+                <p>Residents collaboratively decide how to spend part of the capital budget in their communities through a democratic grassroots process.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse">
+            <div class="medium-3 columns">
+              <a class="thumbnail hover-zoom"><img src="images/ourmiami-fliter.jpg"></a>
+            </div>
+            <div class="medium-9 columns">
+              <div class="medium-padding-left">
+                <h5><i class="fa fa-trophy medium-gray"></i>&nbsp;&nbsp;Our Miami <a href="http://ideas.ourmiami.org/">Public Space Challenge</a></h5>
+                <p>Miami-Dade County residents suggested ideas for improving public space and tracked funding progress of winning ideas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse">
+            <div class="medium-3 columns medium-push-9">
+              <a class="thumbnail hover-zoom"><img src="images/nyc-bike-share-2.jpg"></a>
+            </div>
+            <div class="medium-9 columns medium-pull-3">
+              <div class="medium-padding-right">
+                <h5><i class="fa fa-trophy medium-gray"></i>&nbsp;&nbsp;New York City <a href="http://a841-tfpweb.nyc.gov/bikeshare/station-map/">Bike Share Suggestions</a></h5>
+                <p>In this WordPress prototype for what would become Shareabouts, residents proposed and discussed tens of thousands of station locations, showing their support for bike share in NYC.</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <h3>Zurb Yetinauts</h3>
+
+          <h4 class="medium-gray"><i class="fa fa-trophy"></i>&nbsp;&nbsp;<a href="http://foundation.zurb.com/sites/docs/"><strong>Foundation for Sites</strong></a></h4>
+
+          <div class="row collapse">
+            <div class="medium-3 columns">
+
+              <a href="http://foundation.zurb.com/sites/docs/" class="thumbnail hover-zoom"><img src="images/foundation.jpg"></a>
+
+            </div>
+            <div class="medium-9 columns">
+
+              <div class="medium-padding-left">
+
+                <p>I&apos;m part of the select group of core contributors dubbed <a href="http://foundation.zurb.com/get-involved/yetinauts.html">Yetinauts</a> by the ZURB team. With direct write access to the <a href="http://foundation.zurb.com/sites/docs/">Foundation for Sites</a> codebase, we support and encourage a community of over 850 developers and guide the evolution of the web&apos;s most advanced responsive front-end framework.</p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <hr>
+
+          <h3>Artiphon</h3>
+
+          <h4 class="medium-gray"><i class="fa fa-trophy"></i>&nbsp;&nbsp;<a href="http://artiphon.com/"><strong>artiphon.com</strong></a></h4>
+
+          <div class="row collapse">
+            <div class="medium-3 columns">
+
+              <a href="http://foundation.zurb.com/sites/docs/" class="thumbnail hover-zoom"><img src="images/artiphon.jpg"></a>
+
+            </div>
+            <div class="medium-9 columns">
+
+              <div class="medium-padding-left">
+
+                <p>The Artiphon Instrument 1 is a device that can be played like a guitar, piano, drum pad, synthesizer and many other instruments. Along with Art Director <a href="http://www.chrimmons.com/">Chris Ammons</a>, I built a custom WordPress and Shopify themes that tell this Nashville startup's brand story.</p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <hr>
+
+          <h3>Circle at Seven Studio, Inc.</h3>
+
+          <p>At this boutique agency, I specialized in high-quality design for non-profit organizations, managing the entire process — from initial client contact, estimates, and proposals through production, delivery, and invoicing. We offered a broad range of services including web design, identity/branding, illustration, print design, packaging, books, periodicals, mailers, posters, screen graphics, and…well, you name it!</p>
+
+          <hr>
+
+          <h3>Other Work Experience</h3>
+
+          <ul class="text-large no-bullet">
+            <li>Louisville Magazine <small class="dark-gray">Assistant Art Director</small></li>
+            <li>Specialty Engraving <small class="dark-gray">Production Artist</small></li>
+            <li>Trader Publishing Company <small class="dark-gray">Production Artist</small></li>
+          </ul>
+
+          <hr>
+
+          <h3>Education</h3>
+
+          <h4>Maryland Institute College of Art <small class="dark-gray">1999</small></h4>
+          <p class="">Bachelor of Fine Arts, Cum Laude, Minor in Art History</p>
+
+        </div>
+        <div class="large-4 columns">
+
+          <div class="callout secondary">
+            <h5 class="subheader text-center">Skills <i class="fa fa-check-square-o pink"></i></h5>
+            <ul class="skills-list">
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Responsive Web Design</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;HTML5</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;CSS/SASS</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;UI</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;UX</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Open Source</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Accessibility</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Git</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;JavaScript/jQuery</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Foundation for Sites</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Maps <small>(Leaflet, Carto, Mapbox)</small></span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;PHP <small>(WordPress)</small></span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Brand/Identity</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Typography</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Agile/Scrum</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Gulp</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;NPM</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Bower</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Jekyll</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Python <small>(Django)</small></span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Data Visualization</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;User Testing</span></li>
+              <!-- <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;MVC</span></li> -->
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Grunt</span></li>
+              <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Bootstrap</span></li>
+              <!-- <li><span class="label secondary"><i class="fa fa-check pink"></i>&nbsp;Illustration</span></li> -->
+            </ul>
+          </div>
+
+          <div class="callout secondary text-center">
+            <h5 class="subheader">I <i class="fa fa-code pink"></i><span class="show-for-sr">code</span> with Yetis</h5>
+            I'm a core contributor to the <a href="http://foundation.zurb.com/sites.html"><strong>Foundation&nbsp;for&nbsp;Sites</strong></a> front-end framework.
+            <div class="row">
+              <div class="columns small-8 small-centered medium-5 large-8" style="padding-top:1rem;">
+                <a href="http://foundation.zurb.com/sites.html"><img src="//foundation.zurb.com/assets/img/learn/features/responsive-through-and-through.svg"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout secondary 8-bit-proverbs">
+            <h5 class="subheader text-center">I <i class="fa fa-paint-brush pink"></i><span class="show-for-sr">make</span> art</h5>
+            <div class="row small-up-2 medium-up-4 large-up-2 collapse">
+              <div class="columns">
+                <a href="http://8bitproverbs.com/" class="thumbnail">
+                  <img src="images/punchout.png">
+                </a>
+              </div>
+              <div class="columns">
+                <a href="http://8bitproverbs.com/" class="thumbnail">
+                  <img src="images/tmntiii.png">
+                </a>
+              </div>
+              <div class="columns">
+                <a href="http://8bitproverbs.com/" class="thumbnail">
+                  <img src="images/excitebike.png">
+                </a>
+              </div>
+              <div class="columns">
+                <a href="http://8bitproverbs.com/" class="thumbnail">
+                  <img src="images/duckhunt.png">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="columns small-7 small-centered medium-4 large-7" style="padding-top:1rem;">
+                <a href="http://8bitproverbs.com/"><img src="images/8bitproverbs-logo-wide.png"></a>
+              </div>
+              <div class="columns text-center"><small>LIFE LESSONS FROM CLASSIC VIDEO GAMES</small></div>
+            </div>
+          </div>
+
+          <div class="callout secondary">
+
+            <h5 class="subheader text-center">I <i class="fa fa-headphones pink"></i><span class="show-for-sr">listen to</span> <span class="proofreader-insert"><span>indie</span></span> music.</h5>
+
+            <div class="row small-up-2 medium-up-4 large-up-2 tight-grid">
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:1QwJE08ormGBuqQK3tLLmF">2015 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:3MM41LrTHdS5sGO2pvR8gD">2014 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:5QThsJYaRT1o0LhA8qgQuf">2013 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:2l8NByqNOp78OdK4Vf2pjX">2012 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:3CVSIjPYGTOh1oGNjwRxGo">2011 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:2IY86XSFf5KqTziWmaEALp">2010 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:49SX59o23mnTYahQKlPpOT">2009 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:3v00Jr5z0eItu3T9ytc1nk">2008 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:2399O3gXNJ8tZ6KfMCrUqa">2007 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:258KMKJfuoWDXbXCaJdVsg">2006 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:6ASKBQgOFvDmp7HL3HgD6k">2005 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:2AWVkmSCPWr4xQVlGKOsDP">2004 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:7wRy4ZIeo1I0LWAVNKO4a6">2003 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:44x0VngDpaNW4hnc2jWSvN">2002 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:2aO1ocN8DZDVzS4T0pQUcv">2001 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:4l73NrH0lZGOXUEmlXJKGY">2000 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:5Nt4TMiamHTThtMyjVBc23">1999 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:1Est8dgx23ahMDFq69sUHt">1998 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:4LvEMf7ogWpf2XwiWej8zR">1997 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:4PGP59nWqNuNFj9AdkJnrx">1996 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:2lwSUIbBMIBg3J84QZlb2K">1995 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:6t4vzDsTJWWppOwIiV84Au">1994 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:3aOEDtUloOfOzOs1iP0Zi7">1993 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:3LY9S3hLVLLqLtOxV2IDcG">1992 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:7tkGXpcMhwuMcWzrAI51XD">1991 Favorites</button></div>
+              <div class="columns"><button class="spotify-link button hollow tiny expanded" data-src="https://embed.spotify.com/?uri=spotify:user:andrewthomascochran:playlist:3i6c197fPatp9AuJE288TT">1990 Favorites</button></div>
+            </div>
+
+            <div id="spotifyModal" class="spotify-modal reveal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+              <iframe class="spotify-iframe" src="" width="250" height="300" frameborder="0" allowtransparency="true"></iframe>
+              <p class="loading">HOLD ON A SEC&hellip;</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+          </div>
+
+          <div class="callout secondary text-center">
+
+            <h5 class="subheader">I&apos;m a <i class="fa fa-futbol-o pink"></i><span class="show-for-sr">soccer</span> supporter</h5>
+
+            <div class="row small-up-4 tight-grid">
+              <div class="columns"><p><img src="images/USA_Soccer_Team_logo.png" alt="USMNT"></p></div>
+              <div class="columns"><p><img src="images/New-York-Red-Bulls-White-Logo.png" alt="Red Bull New York"></p></div>
+              <div class="columns"><p><img src="images/LCFC_Shield_Logo.svg.png" alt="Louisville City FC"></p></div>
+              <div class="columns"><p><img src="images/Everton_FC_logo.png" alt="Everton"></p></div>
+            </div>
+
+          </div>
+
         </div>
       </div>
-    </div>
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/dist/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+    </div><!-- end .main-content -->
+
+    <script src="//unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="//maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+    <script src="js/scripts.min.js"></script>
+
   </body>
 </html>

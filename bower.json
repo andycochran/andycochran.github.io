@@ -2,15 +2,15 @@
   "name": "foundation-sites-template",
   "version": "1.0.0",
   "authors": [
-    "ZURB <foundation@zurb.com>"
+    "Andy Cochran <andrewthomascochran@gmail.com>"
   ],
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "Andy Cochran",
   "main": "index.html",
-  "license": "MIT",
-  "homepage": "http://foundation.zurb.com",
+  "homepage": "http://andycochran.github.io/",
   "dependencies": {
     "foundation-sites": "~6.3.0",
-    "motion-ui": "~1.2.2"
+    "motion-ui": "~1.2.2",
+    "font-awesome": "fontawesome#^4.7.0"
   },
   "ignore": [
     "**/.*",
