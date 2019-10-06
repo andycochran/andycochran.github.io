@@ -25,6 +25,7 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.0",
     "gulp-load-plugins": "^1.1.0",
+    "gulp-npm-dist": "^1.0.3",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1"
   },

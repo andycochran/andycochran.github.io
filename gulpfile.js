@@ -2,6 +2,7 @@ var gulp          = require('gulp');
 var browserSync   = require('browser-sync').create();
 var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
+var npmDist       = require('gulp-npm-dist');
 
 var sassPaths = [
   'node_modules/foundation-sites/scss',
@@ -34,3 +35,9 @@ function serve() {
 gulp.task('sass', sass);
 gulp.task('serve', gulp.series('sass', serve));
 gulp.task('default', gulp.series('sass', serve));
+
+// Copy dependencies to ./public/libs/
+gulp.task('copy:libs', function() {
+  gulp.src(npmDist(), {base:'./node_modules'})
+    .pipe(gulp.dest('./js/libs'));
+});
